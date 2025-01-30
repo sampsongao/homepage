@@ -1,14 +1,13 @@
 import Link from "next/link";
-import { useContext } from "react";
-import { ThemeContext } from "../contexts/ThemeContext";
+import useDarkMode from "../hooks/useDarkMode";
 
 // export type NavBarProps = {};
 
 export default function NavBar() {
-  const { darkModeOn, setDarkModeOn } = useContext(ThemeContext);
+  const [darkModeOn, setDarkModeOn] = useDarkMode();
 
   return (
-    <nav className="flex justify-between items-center px-12 md:px-24 lg:px-36 bg-white dark:bg-black *:text-gray-500 dark:*:text-gray-300 ">
+    <nav className="z-100 flex justify-between items-center container *:text-gray-700 dark:*:text-gray-300 ">
       <div className="flex items-center">
         <Link href="/" className="text-2xl">Sampson Gao</Link>
       </div>
