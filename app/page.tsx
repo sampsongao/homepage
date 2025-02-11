@@ -21,22 +21,18 @@ export default function Home() {
             radial-gradient(circle at 40% 110%, rgb(76 94 255 / 50%) 0px, rgb(0 0 0 / 0%) 1000px)
           `,
       }}>
+        <section className="h-[80vh] min-h-[600px] relative" style={{
+          perspective: "400px",
+          transformStyle: "preserve-3d",
+          WebkitTransformStyle: "preserve-3d",
+        }}>
+          <div className="absolute top-0 bottom-0 left-0 right-0 -z-10 bg-[url('/hero-background.jpeg')] bg-center bg-cover bg-fixed opacity-30 opacity-30" />
 
-        <NavBar />
+          <NavBar />
 
-        <section className="h-[80vh]">
-          <div className="h-full w-screen relative">
+          <div className="h-full w-screen">
             <div className="h-full">
-              {/* <Image
-                className="block dark:hidden absolute z-0 top-0 left-0 w-full h-full object-cover opacity-10 blur-md"
-                src={"/Toronto_skyline_light.jpg"} alt="Toronto skyline" width={2000} height={2000}
-              />
-              <Image
-                className="hidden dark:block absolute z-0 top-0 left-0 w-full h-full object-cover opacity-10 blur-md"
-                src={"/Toronto_skyline_dark.jpg"} alt="Toronto skyline" width={2000} height={2000}
-              /> */}
-
-              <div className="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center">
+              <div className="h-full flex flex-col items-center justify-center">
                 <h1 className="text-3xl font-bold text-center text-black dark:text-white mb-16">
                   Welcome to my home page!
                 </h1>
@@ -79,10 +75,10 @@ export default function Home() {
 
             <div className="h-[300px] col-span-1 flex flex-col justify-center p-4 text-gray-700 dark:text-gray-300 bg-white shadow-xl dark:bg-zinc-900">
               <h1 className="text-2xl">
-                How to Lorem Ipsum?
+                {"How to Lorem Ipsum?"}
               </h1>
               <p className="text-sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                {"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
               </p>
             </div>
             <div className="h-[300px] col-span-1 shadow-xl">
@@ -94,19 +90,19 @@ export default function Home() {
             </div>
             <div className="h-[300px] col-span-1 flex flex-col justify-center p-4 text-gray-700 dark:text-gray-300 bg-white shadow-xl dark:bg-zinc-900">
               <h1 className="text-2xl">
-                Lorem Ipsum
+                {"Lorem Ipsum"}
               </h1>
               <p className="text-sm">
-                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                {"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."}
               </p>
             </div>
 
             <div className="h-[300px] col-span-1 flex flex-col justify-center p-4 text-gray-700 dark:text-gray-300 bg-white shadow-xl dark:bg-zinc-900">
               <h1 className="text-2xl">
-                Lorem Ipsum
+                {"Lorem Ipsum"}
               </h1>
               <p className="text-sm">
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                {"The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested."}
               </p>
             </div>
             <div className="h-[300px] col-span-1 shadow-xl">

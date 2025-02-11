@@ -7,7 +7,7 @@ export default function NavBar() {
   const [darkModeOn, setDarkModeOn] = useDarkMode();
 
   return (
-    <nav className="z-100 flex justify-between items-center container *:text-gray-700 dark:*:text-gray-300 ">
+    <nav className="flex justify-between items-center container *:text-gray-700 dark:*:text-gray-300 ">
       <div className="flex items-center">
         <Link href="/" className="text-2xl">Sampson Gao</Link>
       </div>
