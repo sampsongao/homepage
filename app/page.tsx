@@ -175,7 +175,7 @@ export default function Home() {
               <div className="flex flex-row items-center justify-center">
                 <StylishButton
                   type={ButtonType.TERTIARY}
-                  url='/posts'
+                  href='/posts'
                   rounded
                 >
                   See all posts

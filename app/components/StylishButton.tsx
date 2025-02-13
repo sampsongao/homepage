@@ -4,6 +4,7 @@ export enum ButtonType {
   PRIMARY = 'primary',
   SECONDARY = 'secondary',
   TERTIARY = 'tertiary',
+  LINK = 'LINK',
 }
 
 export type StylishButtonProps = {
@@ -13,7 +14,7 @@ export type StylishButtonProps = {
   rounded?: boolean;
   disabled?: boolean;
   children?: React.ReactNode;
-  url?: string;
+  href?: string;
   onClick?: () => void;
 }
 
@@ -55,6 +56,17 @@ export default function StylishButton(props: StylishButtonProps) {
       hover:underline
       disabled:hover:no-underline
     `,
+    [ButtonType.LINK]: `
+      flex items-center w-fit
+      px-4 py-2 font-semibold
+      border-hidden border-blue-600
+      text-gray-600 dark:text-gray-400 [&_svg]:fill-gray-600 [&_svg]:dark:fill-gray-400
+      border-gray-600 dark:border-gray-400
+      hover:text-gray-800 dark:hover:text-gray-200 [&_svg]:hover:fill-gray-800 [&_svg]:dark:hover:fill-gray-200
+      disabled:hover:text-gray-600 disabled:dark:hover:text-gray-400 [&_svg]:disabled:hover:fill-gray-600 [&_svg]:disabled:dark:hover:fill-gray-400
+      hover:underline
+      disabled:hover:no-underline
+    `,
   };
 
   const className = [
@@ -63,12 +75,13 @@ export default function StylishButton(props: StylishButtonProps) {
     props.disabled ? "cursor-not-allowed" : "",
   ].join(" ");
 
-  if (props.url) {
+  if (props.href) {
     return (
       <Link
         id={props.id}
         className={className}
-        href={props.url}
+        href={props.href}
+        onClick={props.onClick}
       >
         {props.children}
       </Link>
