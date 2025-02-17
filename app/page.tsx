@@ -39,7 +39,7 @@ export default function Home() {
         <div className="h-full w-screen">
           <div className="h-full">
             <div className="h-full flex flex-col items-center justify-center">
-              <h1 className="text-3xl font-bold text-center text-black dark:text-white mb-16">
+              <h1 className="text-3xl text-center text-black dark:text-white mb-16">
                 Welcome to my home page!
               </h1>
 
@@ -98,11 +98,11 @@ export default function Home() {
               </p>
             </div>
             <div className="h-[300px] col-span-1 shadow-xl">
-              <Image className="w-full h-full object-cover" src="/project2.jpg" alt="project 1" width={300} height={300} />
+              <Image className="w-full h-full object-cover" src="/project2.jpg" alt="project 2" width={300} height={300} />
             </div>
 
             <div className="h-[300px] col-span-1 shadow-xl">
-              <Image className="w-full h-full object-cover" src="/project3.jpg" alt="project 1" width={300} height={300} />
+              <Image className="w-full h-full object-cover" src="/project3.jpg" alt="project 3" width={300} height={300} />
             </div>
             <div className="h-[300px] col-span-1 flex flex-col justify-center p-4 text-gray-700 dark:text-gray-300 bg-white shadow-xl dark:bg-zinc-900">
               <h1 className="text-2xl">
@@ -122,7 +122,7 @@ export default function Home() {
               </p>
             </div>
             <div className="h-[300px] col-span-1 shadow-xl">
-              <Image className="w-full h-full object-cover" src="/project4.jpg" alt="project 1" width={300} height={300} />
+              <Image className="w-full h-full object-cover" src="/project4.jpg" alt="project 4" width={300} height={300} />
             </div>
           </div>
         </section>
@@ -168,7 +168,7 @@ export default function Home() {
             <PostPreviewTile
               title="Lorem Ipsum"
               description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
-              previewImageUrl="/Toronto_skyline_dark.jpg"
+              previewImageUrl="/project1.jpg"
             />
 
             <div className="sm:col-span-1 md:col-span-2 lg:col-span-3 my-16">
@@ -247,7 +247,7 @@ export default function Home() {
                     </label> */}
                   <input
                     id="first_name_input"
-                    type="string"
+                    type="text"
                     placeholder="First name"
                     className="w-full bg-transparent text-gray-800 dark:text-gray-200 px-2 border border-solid p-1 border-zinc-400 rounded-md"
                   />
@@ -258,7 +258,7 @@ export default function Home() {
                     </label> */}
                   <input
                     id="last_name_input"
-                    type="string"
+                    type="text"
                     placeholder="Last name"
                     className="w-full bg-transparent text-gray-800 dark:text-gray-200 px-2 border border-solid p-1 border-zinc-400 rounded-md"
                   />
@@ -270,7 +270,7 @@ export default function Home() {
                     </label> */}
                   <input
                     id="email_input"
-                    type="string"
+                    type="text"
                     placeholder="Email"
                     className="w-full bg-transparent text-gray-800 dark:text-gray-200 px-2 border border-solid p-1 border-zinc-400 rounded-md"
                   />
