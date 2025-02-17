@@ -27,10 +27,10 @@ export default function StylishButton(props: StylishButtonProps) {
       bg-[#0055ff] dark:bg-[#18168c]
       border-[#0055ff] dark:border-[#18168c]
       border-solid border-2
-      hover:text-white hover:dark:text-gray-100 [&_svg]:hover:fill-white [&_svg]:dark:hover:fill-gray-100
+      hover:text-white hover:dark:text-gray-100 hover:[&_svg]:fill-white dark:hover:[&_svg]:fill-gray-100
       hover:bg-[#1f48c8] hover:dark:bg-[#172dc9]
       border-[#1f48c8] dark:hover:border-[#172dc9]
-      disabled:hover:text-gray-200 dark:disabled:hover:text-gray-300 [&_svg]:disabled:hover:fill-gray-200 [&_svg]:disabled:dark:hover:fill-gray-300
+      disabled:hover:text-gray-200 dark:disabled:hover:text-gray-300 disabled:hover[&_svg]:fill-gray-200 dark:disabled:hover[&_svg]:fill-gray-300
       disabled:hover:bg-[#0055ff] dark:disabled:hover:bg-[#18168c]
       disabled:hover:border-[#0055ff] dark:disabled:hover:border-[#18168c]
     `,
@@ -40,10 +40,10 @@ export default function StylishButton(props: StylishButtonProps) {
       border-solid border-2
       text-gray-600 dark:text-gray-400 [&_svg]:fill-gray-600 dark:[&_svg]:fill-gray-400
       border-gray-600 dark:border-gray-400
-      hover:text-gray-800 dark:hover:text-gray-200 [&_svg]:hover:fill-gray-800 [&_svg]:dark:hover:fill-gray-200
+      hover:text-gray-800 dark:hover:text-gray-200 hover:[&_svg]:fill-gray-800 dark:hover:[&_svg]:fill-gray-200
       hover:border-gray-800 dark:hover:border-gray-200
-      disabled:hover:text-gray-600 dark:disabled:hover:text-gray-400 [&_svg]:disabled:group-hover:fill-gray-600 [&_svg]:dark:disabled:hover:fill-gray-400
-      disabled:hover:border-gray-600 dark:disabled:hover:border-gray-400  [&_svg]:disabled:hover:fill-gray-600 [&_svg]:disabled:dark:hover:fill-gray-400
+      disabled:hover:text-gray-600 dark:disabled:hover:text-gray-400 [&_svg]:disabled:group-hover:fill-gray-600 dark:disabled:hover:[&_svg]:fill-gray-400
+      disabled:hover:border-gray-600 dark:disabled:hover:border-gray-400 disabled:hover[&_svg]:fill-gray-600 dark:disabled:hover:[&_svg]:fill-gray-400
     `,
     [ButtonType.TERTIARY]: `
       flex items-center w-fit
@@ -51,19 +51,17 @@ export default function StylishButton(props: StylishButtonProps) {
       border-hidden border-blue-600
       text-gray-600 dark:text-gray-400 [&_svg]:fill-gray-600 [&_svg]:dark:fill-gray-400
       border-gray-600 dark:border-gray-400
-      hover:text-gray-800 dark:hover:text-gray-200 [&_svg]:hover:fill-gray-800 [&_svg]:dark:hover:fill-gray-200
-      disabled:hover:text-gray-600 disabled:dark:hover:text-gray-400 [&_svg]:disabled:hover:fill-gray-600 [&_svg]:disabled:dark:hover:fill-gray-400
+      hover:text-gray-800 dark:hover:text-gray-200 hover:[&_svg]:fill-gray-800 dark:hover:[&_svg]:fill-gray-200
+      disabled:hover:text-gray-600 disabled:dark:hover:text-gray-400 disabled:hover[&_svg]:fill-gray-600 dark:disabled:hover[&_svg]:fill-gray-400
       hover:underline
       disabled:hover:no-underline
     `,
     [ButtonType.LINK]: `
       flex items-center w-fit
-      px-4 py-2 font-semibold
-      border-hidden border-blue-600
+      font-semibold
       text-gray-600 dark:text-gray-400 [&_svg]:fill-gray-600 [&_svg]:dark:fill-gray-400
-      border-gray-600 dark:border-gray-400
-      hover:text-gray-800 dark:hover:text-gray-200 [&_svg]:hover:fill-gray-800 [&_svg]:dark:hover:fill-gray-200
-      disabled:hover:text-gray-600 disabled:dark:hover:text-gray-400 [&_svg]:disabled:hover:fill-gray-600 [&_svg]:disabled:dark:hover:fill-gray-400
+      hover:text-gray-800 dark:hover:text-gray-200 hover:[&_svg]:fill-gray-800 dark:hover:[&_svg]:fill-gray-200
+      disabled:hover:text-gray-600 disabled:dark:hover:text-gray-400 disabled:hover[&_svg]:fill-gray-600 dark:disabled:hover[&_svg]:fill-gray-400
       hover:underline
       disabled:hover:no-underline
     `,
